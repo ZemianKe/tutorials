@@ -41,9 +41,9 @@ weights = {
 }
 biases = {
     # (128, )
-    'in': tf.Variable(tf.constant(0.1, shape=[n_hidden_units, ])),
+    'in': tf.Variable(tf.constant(0.1, shape=[1, n_hidden_units])),
     # (10, )
-    'out': tf.Variable(tf.constant(0.1, shape=[n_classes, ]))
+    'out': tf.Variable(tf.constant(0.1, shape=[1, n_classes]))
 }
 
 
